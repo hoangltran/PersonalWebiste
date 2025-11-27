@@ -62,6 +62,44 @@ const education = [
   { school: 'Brigham Young University', location: 'Provo, UT', degree: 'Bachelor of Science in Civil Engineer', year: 'Apr 2010' },
 ]
 
+const certifications = [
+  {
+    name: 'AWS Certified Cloud Practitioner',
+    issuer: 'Amazon Web Services',
+    year: 'Active',
+    focus: 'Foundational cloud architecture, security, and cost optimization.',
+    link: 'https://www.credly.com/badges/f9f71fb1-9f09-4a0f-8c24-ffa4bcf63c3c/public_url',
+  },
+  {
+    name: 'Coursera Credential',
+    issuer: 'Coursera',
+    year: 'Completed',
+    focus: 'Credential link provided by Coursera.',
+    link: 'http://coursera.org/account/accomplishments/verify/3U3SW2LQ2NQK',
+  },
+  {
+    name: 'Coursera Credential',
+    issuer: 'Coursera',
+    year: 'Completed',
+    focus: 'Credential link provided by Coursera.',
+    link: 'https://www.coursera.org/account/accomplishments/verify/MDLFJB3USYQD',
+  },
+  {
+    name: 'Coursera Credential',
+    issuer: 'Coursera',
+    year: 'Completed',
+    focus: 'Credential link provided by Coursera.',
+    link: 'http://coursera.org/account/accomplishments/verify/V567H1CPD2XS',
+  },
+  {
+    name: 'Databricks Credential',
+    issuer: 'Databricks',
+    year: 'Completed',
+    focus: 'Credential link provided by Databricks.',
+    link: 'https://credentials.databricks.com/846f29e2-329b-41f9-b9f2-0374be60a803#acc.ScRqOr8J',
+  },
+]
+
 function App() {
   return (
     <div className="page">
@@ -70,7 +108,8 @@ function App() {
         <div className="hero-content">
           <p className="eyebrow">Cloud & Software Engineer</p>
           <h1>
-            Hi, I’m Hoang Tran — I build resilient cloud systems and software that scale with ambition.
+            Hi, I’m Hoang Tran — resilient, self-motivated, and relentlessly hard-working. I build software that scales with ambition,
+            whether in the cloud or on-prem.
           </h1>
           <p className="lede">
             AWS-certified engineer with 3+ years designing infrastructure-as-code, high-throughput data pipelines, and hybrid
@@ -158,6 +197,30 @@ function App() {
                   </span>
                 ))}
               </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="section alt" id="certifications">
+        <div className="section-header">
+          <p className="eyebrow">Certifications</p>
+          <h2>Validated cloud expertise</h2>
+        </div>
+        <div className="skills-grid">
+          {certifications.map((cert) => (
+            <div className="skill-card" key={cert.name}>
+              <div className="skill-title">{cert.name}</div>
+              <div className="exp-meta" style={{ justifyContent: 'flex-start' }}>
+                <span>{cert.issuer}</span>
+                <span>{cert.year}</span>
+              </div>
+              <p className="section-text" style={{ marginTop: 6 }}>{cert.focus}</p>
+              {cert.link && (
+                <a className="btn ghost" href={cert.link} target="_blank" rel="noreferrer">
+                  View credential
+                </a>
+              )}
             </div>
           ))}
         </div>
