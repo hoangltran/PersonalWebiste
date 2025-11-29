@@ -108,8 +108,7 @@ function App() {
         <div className="hero-content">
           <p className="eyebrow">Cloud & Software Engineer</p>
           <h1>
-            Hi, I’m Hoang Tran — resilient, self-motivated, and relentlessly hard-working. I build software that scales with ambition,
-            whether in the cloud or on-prem.
+            Hi, I’m Hoang Tran — I’m passionate about building great software and always eager to learn new technologies.
           </h1>
           <p className="lede">
             AWS-certified engineer with 3+ years designing infrastructure-as-code, high-throughput data pipelines, and hybrid
