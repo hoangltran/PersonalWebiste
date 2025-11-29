@@ -71,24 +71,24 @@ const certifications = [
     link: 'https://www.credly.com/badges/f9f71fb1-9f09-4a0f-8c24-ffa4bcf63c3c/public_url',
   },
   {
-    name: 'Coursera Credential',
+    name: 'Introduction to Software Engineering',
     issuer: 'Coursera',
-    year: 'Completed',
-    focus: 'Credential link provided by Coursera.',
+    year: '2025',
+    focus: 'Introduction to Software Engineering Fundamental Concepts',
     link: 'http://coursera.org/account/accomplishments/verify/3U3SW2LQ2NQK',
   },
   {
-    name: 'Coursera Credential',
+    name: 'Java App Development Project: Fundamentals, OOP & File I/O',
     issuer: 'Coursera',
     year: 'Completed',
-    focus: 'Credential link provided by Coursera.',
+    focus: 'Build Java Application using OPP and File I/O',
     link: 'https://www.coursera.org/account/accomplishments/verify/MDLFJB3USYQD',
   },
   {
-    name: 'Coursera Credential',
+    name: 'Object Oriented Programming in Java',
     issuer: 'Coursera',
     year: 'Completed',
-    focus: 'Credential link provided by Coursera.',
+    focus: 'Object Oriented Programming in Java',
     link: 'http://coursera.org/account/accomplishments/verify/V567H1CPD2XS',
   },
   {
@@ -118,7 +118,7 @@ function App() {
             <a className="btn primary" href="mailto:tranluuhoang@gmail.com">
               Start a project
             </a>
-            <a className="btn ghost" href="/Resume.pdf" target="_blank" rel="noreferrer">
+            <a className="btn ghost" href="https://github.com/hoangltran/PersonalWebiste/blob/main/Resume.pdf" target="_blank" rel="noreferrer">
               Download resume
             </a>
             <span className="location">Pinellas Park, FL · Fluent in English & Vietnamese</span>
@@ -262,7 +262,7 @@ function App() {
           <a className="btn ghost" href="tel:+18013617976">
             (801) 361-7976
           </a>
-          <a className="btn text" href="/Resume.pdf" target="_blank" rel="noreferrer">
+          <a className="btn text" href="https://github.com/hoangltran/PersonalWebiste/blob/main/Resume.pdf" target="_blank" rel="noreferrer">
             View resume
           </a>
         </div>
